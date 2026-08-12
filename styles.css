@@ -1348,7 +1348,12 @@ body.home {
 	pointer-events: none;
 }
 
-.hero-cta {
+.hero-cta,
+a.hero-cta,
+a.hero-cta:visited,
+a.hero-cta:hover,
+a.hero-cta:focus,
+a.hero-cta:active {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -1356,7 +1361,8 @@ body.home {
 	padding: 1.1rem 2.1rem;
 	border-radius: 999px;
 	background: #ff3b30;
-	color: #ffffff;
+	color: #ffffff !important;
+	-webkit-text-fill-color: #ffffff !important;
 	font-family: "Be Vietnam Pro", sans-serif;
 	font-size: clamp(15px, 1.35vw, 22px);
 	font-weight: 700;
